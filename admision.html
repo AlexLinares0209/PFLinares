@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo - Admisión</title>
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link rel="shortcut icon" href="./images_favicons/libros.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./estilos/estilos.css">
+
+</head>
+<body>
+
+    <!-- CABECERA - LOGO - BARRA DE NAVEGACION -->
+    <header>
+        <a href="index.html" class="logo">
+            <h1>LOGO COLEGIO</h1>
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a class="active" href="admision.html">Admisión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="saber-mas"><a href="./admision.html">¡Matriculate ya!</a></button>
+    </header>
+
+    <section class="content">
+
+        <h1 class="logo_admision">ADMISIÓN 2023</h1>
+        <p class="subtitulo">Reserva tu vacante para este año</p>
+
+        <div class="contenedor-form">
+
+            <div class="logo-admin">
+                <img src="images_fondos/imagen_admision.png" alt="">
+            </div>
+
+            <div class="contact-form">
+                <h3>Llenar el formulario</h3>
+                <form action="">
+                    <p>
+                        <label class="datos">N/AP del apoderado*</label>
+                        <input type="text" name="apoderado" >
+                    </p>
+                    <p>
+                        <label class="datos">DNI del apoderado*</label>
+                        <input type="text" name="dniapoderado" >
+                    </p>
+                    <p>
+                        <label class="datos">N/AP del alumno*</label>
+                        <input type="email" name="alumno">
+                    </p>
+                    <p>
+                        <label class="datos">dni del alumno*</label>
+                        <input type="text" name="dnialumno">
+                    </p>
+                    <p>
+                        <label class="datos">Celular*</label>
+                        <input type="tel" name="Celular">
+                    </p>
+                    <p>
+                        <label class="datos">E-mail*</label>
+                        <input type="email" name="email">
+                    </p>
+                    
+                    <select name="grados" class="select">
+                        <option value="0" class="opcion1">Grado educativo de interés*</option>
+                        <option value="1">Inicial 3 años</option>
+                        <option value="2">Inicial 4 años</option>
+                        <option value="3">Inicial 5 años</option>
+                        <option value="4">Primaria 1° grado</option>
+                        <option value="5">Primaria 2° grado</option>
+                        <option value="6">Primaria 3° grado</option>
+                        <option value="7">Primaria 4° grado</option>
+                        <option value="8">Primaria 5° grado</option>
+                        <option value="9">Primaria 6° grado</option>
+                        <option value="10">Secundaria 1° grado</option>
+                        <option value="11">Secundaria 2° grado</option>
+                        <option value="12">Secundaria 3° grado</option>
+                        <option value="13">Secundaria 4° grado</option>
+                        <option value="14">Secundaria 5° grado</option>
+                    </select>
+
+                    <p class="block">
+                       <label class="datos" class="lbl-comentarios">Comentarios:</label> 
+                        <textarea name="Comentarios" rows="3"></textarea>
+                    </p>
+
+                    <div class="politicas">
+                        <input type="checkbox" name="" class="check" id="check1">
+                        <label for="check1" class="labelcheck">Acepto las políticas de privacidad. * <a href="">(Ver)</a></label>
+                        <br>
+                        <input type="checkbox" name="" class="check" id="check1">
+                        <label for="check1" class="labelcheck">Acepto recibir información útil sobre eventos y programas de Logo Colegio para finalidades adicionales.</label>
+                    </div>
+                                        
+
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER 1 INFORMACION (BREVE INFORMACION DE LA PÁGINA) -->
+    <section id="footer-links" class="content-footer-links">
+
+        <div class="caja-contenedor-footer-links">
+            <div class="caja-footer-links">
+                <h2 class="titulo-seccion-footer-links">LOGO COLEGIO</h2>
+                <p class="parrafo-seccion-footer-links">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur beatae laudantium ut cumque assumenda iure, sapiente voluptate a modi incidunt.</p>
+                <select name="" id="">
+                    <option value="">Spanish (Esp)</option>
+                    <option value="">English (Us)</option>
+                    <option value="">Portuguese (Pt)</option>
+                    <option value="">Frech (fr)</option>
+                    <option value="">German (Deu)</option>
+                </select>
+            </div>
+            <div class="links-redes">
+                <a href="#">Acerca de</a>
+                <a href="#">Como trabajamos</a>
+                <a href="#">Contáctenos</a>
+                <a href="#">Preguntas frecuentes</a>
+
+                <ul class="redes-sociales">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+
+                <ul class="contacto">
+                    <li><i class="fa-solid fa-phone"></i> 963 - 852 - 752</li>
+                    <li><i class="fa-solid fa-envelope"></i> colegio@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Av Venezuela 5355, San Miguel, Lima.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="content-footer">
+        <div class="caja-contenedor-footer">
+            <div class="caja-footer">
+                <h2 class="titulo-footer">Perú.</h2>
+            </div>
+            <div class="caja-footer">
+                <p class="parrafo-footer"><i class="fa-solid fa-copyright"></i> 2023 AlexLinares. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
