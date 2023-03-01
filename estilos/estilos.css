@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #192229;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #192229;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header .logo h1 {
+    color: rgb(35, 101, 255);
+    font-weight: normal;
+}
+
+header .navbar ul {
+    display: flex;
+    font-size: 1.7rem;
+    list-style: none;
+}
+
+header .navbar ul li a{
+    margin-left: 2rem;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+header .navbar a:hover {
+    color: rgb(35, 101, 255);
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+header .saber-mas {
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: rgb(35, 101, 255);
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+header .saber-mas a{ 
+    color: white;
+}
+
+header .saber-mas:hover {
+    background-color: rgb(16, 88, 255);
+    cursor: pointer;
+}
+
+header .saber-mas a:hover{ 
+    color: white;
+}
+
+/* ESTADO ACTIVO */
+.navbar .active {
+    color: rgb(16, 88, 255);
+}
+
+a:hover:not(.active) {
+    color: black;
+}
+
+/* Section Hero */
+
+.hero {
+    *background-color: #f5f6f7;
+    background-image: url(../images_fondos/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+    background-size: cover;
+    background-color: rgba(44, 44, 44, 0.5);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: white;
+    *min-height: 450px;
+    height: 100vh;
+    *clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-principal h1 {
+    font-size: 5rem;
+}
+
+.hero-principal p {
+    font-size: 1.5rem;
+}
+
+.hero-principal .boton-claro {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: rgb(35, 101, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+.hero-principal .boton-claro .boton-claro-a {
+    color: white;
+}
+
+
+/*
+.cover {
+    height: 100vh;
+    background-image: url(../images_fondos/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+    background-attachment: fixed;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_index {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.parrafo_index {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.button_index {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: rgb(35, 101, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+.button_index a {
+    color: white;
+    text-decoration: none;
+}
+
+.button_index:hover {
+    background-color: rgb(16, 88, 255);
+    color: white;
+    transition: all 0.9s;
+}
+
+.button_index a:hover {
+    color: white;
+}
+*/
+
+.proyectos-recientes {
+    padding: 40px;
+    color: white;
+}
+
+.proyectos-recientes h2 {
+    font-size: 4rem;
+}
+
+.proyectos-recientes p {
+    font-size: 1.5rem;
+}
+
+.content-services {
+    color: white;
+}
+
+.content-services .caja-contenedor {
+    row-gap: 20px;
+}
+
+.content-services .caja-contenedor .caja {
+    background-color: #212e36;
+    border-radius: 0.5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    *margin: 1.5rem 1rem;
+    padding: 3rem 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.content-services .caja-contenedor .caja:hover {
+    border: 1px solid rgb(16, 88, 255);
+}
+
+.content-services .caja-contenedor .caja img {
+    height: 10rem;
+}
+
+.content-services .caja-contenedor .caja h3 {
+    font-size: 2rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.content-services .caja-contenedor .caja p {
+    font-size: 1.3rem;
+    color: #99afbd;
+    padding: 1rem 0;
+}
+
+
+/* boton de información */
+
+
+.content-information {
+    background-color: #092739;
+    color: white;
+    padding: 40px;
+}
+
+.content-information {
+    *place-items: center;
+}
+
+.info-p {
+    color: white;
+    *padding-top: 0;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.section-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(35, 101, 255);
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    *margin-left: 100px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(16, 88, 255);
+}
+
+.button a:hover {
+    color: white;
+}
+
+/* caruosel */
+
+.contenedor-clientes .carousel {
+    text-align: center;
+    max-width: 900px;
+}
+
+.carousel-item {
+    *padding: 40px 0;
+    *height: 500px;
+}
+
+.clientes-hijos {
+    padding: 60px 100px;
+}
+
+.clientes-hijos img {
+    height: 10rem;
+    color: #1e1e1e;
+}
+
+.clientes-hijos h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+}
+
+.clientes-hijos p {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/* FOOTER LINKS */
+
+#footer-links {
+    background-color: #212e36;
+}
+
+.caja-contenedor-footer-links {
+    padding: 40px 150px;
+}
+
+.caja-contenedor-footer-links .caja-footer-links .titulo-seccion-footer-links {
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.caja-contenedor-footer-links .caja-footer-links .parrafo-seccion-footer-links {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.caja-contenedor-footer-links .links-redes {
+    text-align: right;
+}
+
+.caja-contenedor-footer-links .links-redes a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    *padding-right: 10px;
+    font-size: 16px;
+}
+
+.caja-contenedor-footer-links .links-redes a:hover {
+    *text-decoration: underline;
+}
+
+.caja-contenedor-footer-links .links-redes .redes-sociales li {
+    list-style: none;
+    padding-top: 20px;
+    padding-right: 10px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    *justify-content: end;
+    cursor: pointer;
+}
+
+.links-redes .contacto {
+    color: white;
+    list-style: none;
+    *padding-top: 20px;
+    *padding-right: 10px;
+    font-size: 14px;
+}
+
+.caja-contenedor-footer-links .caja-footer-links .input-select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.content-footer {
+    background-color: #192229;
+    color: white;
+}
+
+.caja-contenedor-footer {
+    padding: 20px 150px;
+}
+
+.caja-contenedor-footer .caja-footer .titulo-footer {
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.caja-contenedor-footer .caja-footer .parrafo-footer {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* Nosotros - bootstrap */
+
+.hero-nosotros {
+    margin-top: 70px;
+    height: 320px;
+    background-image: url(../images_fondos/rsz_pang-yuhao-_kd5cxwzok4-unsplash.jpg);
+    color: white;
+    background-repeat: no-repeat center top;
+    background-position: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.hero-principal-nosotros  {
+    padding: 3rem;
+}
+
+.hero-principal-nosotros  h1 {
+    font-size: 5rem;
+}
+
+.content-info {
+    color: white;
+}
+
+
+.caja-contenedor-advantage {
+    padding: 50px 9%;
+}
+
+.caja-contenedor-advantage .caja-info {
+    padding-left: 40px;
+}
+
+.caja-contenedor-advantage .div-img .caja-info-img {
+    width: 100%;
+    height: 100%;
+    *object-fit: contain;
+}
+
+.caja-contenedor-advantage .caja-info .titulo-seccion {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.caja-contenedor-advantage .caja-info .parrafo-seccion {
+    font-size: 15px;
+    color: #99afbd;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.caja-contenedor-advantage .caja-info .advantage-divs .titulo-seccion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.caja-contenedor-advantage .caja-info .advantage-divs .parrafo-seccion {
+    font-size: 15px;
+    color: #99afbd;
+    font-weight: 400;
+}
+
+
+.footer-cajas1 {
+    padding: 40px;
+}
+
+.footer-cajas1 .caja-contenedor {
+    *padding: 0 9%;
+    *margin: 50px 0;
+
+    row-gap: 20px;
+}
+
+.footer-cajas1 .caja-contenedor .caja {
+    background-color: #212e36;
+    border-radius: 0.5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    *margin: 1.5rem 2rem;
+    padding: 3rem 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.footer-cajas1 .caja-contenedor .caja img {
+    height: 15rem;
+}
+
+.footer-cajas1 .caja-contenedor .caja h3 {
+    font-size: 2rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.footer-cajas1 .caja-contenedor .caja p {
+    font-size: 1.3rem;
+    color: #99afbd;
+    padding: 1rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #192229;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); 
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar ul {
+        display: block;
+        font-size: 2rem;
+    }
+
+    header .navbar ul li {
+        margin: 2rem 0;
+    }
+
+    header .navbar ul li a {
+        color: white;
+    }
+
+    header .saber-mas {
+        display: none;
+    }
+
+    header input:checked ~ .navbar {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+
+    .proyectos-recientes h2 {
+        font-size: 2.5rem;
+    }
+    
+    .proyectos-recientes p {
+        font-size: 1.5rem;
+    }
+
+    .info-p {
+        text-align: center;
+    }
+
+    .info-p h3 {
+        font-size: 2.5rem;
+    }
+
+    .info-p p {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        background-color: rgb(35, 101, 255);
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .caja-contenedor-footer-links {
+        gap: 40px;
+        padding: 40px 9%;
+    }
+
+    .caja-contenedor-footer {
+        padding: 40px 9%;
+    }
+
+    .caja-contenedor-footer .caja-footer .titulo-footer {
+        text-align: center;
+    }
+    
+    .caja-contenedor-footer .caja-footer .parrafo-footer {
+        text-align: center;
+    }
+
+    .caja-contenedor-advantage .caja-info .titulo-seccion {
+        font-size: 4rem;
+    }
+    
+    .caja-contenedor-advantage .caja-info .parrafo-seccion {
+        font-size: 1.5rem;
+    }
+    
+    .caja-contenedor-advantage .caja-info .advantage-divs .titulo-seccion {
+        font-size: 1.8rem;
+    }
+    
+    .caja-contenedor-advantage .caja-info .advantage-divs .parrafo-seccion {
+        font-size: 1.5rem;
+    }
+
+    .caja-contenedor-advantage .caja-info {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+}
