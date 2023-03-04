@@ -309,6 +309,10 @@ footer {
     padding-bottom: 20px;
 }
 
+.contenedor-footer-links .caja-footer-links .titulo-seccion-footer-links span {
+    color: rgb(35, 101, 255);
+}
+
 .contenedor-footer-links .caja-footer-links .parrafo-seccion-footer-links {
     text-align: left;
     font-size: 16px;
@@ -431,6 +435,10 @@ footer {
     color: white;
     text-align: left;
     padding-bottom: 20px;
+}
+
+.caja-contenedor-advantage .caja-info .titulo-seccion span {
+    color: rgb(35, 101, 255);
 }
 
 .caja-contenedor-advantage .caja-info .parrafo-seccion {
