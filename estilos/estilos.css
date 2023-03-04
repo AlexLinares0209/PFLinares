@@ -23,6 +23,8 @@ body {
     background-color: #192229;
 }
 
+/* Inicio - bootstrap */
+
 header {
     position: fixed;
     top: 0;
@@ -38,23 +40,30 @@ header {
 }
 
 header .logo h1 {
-    color: rgb(35, 101, 255);
+    color: white;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
-header .navbar ul {
+header .logo span {
+    color: rgb(35, 101, 255);
+}
+
+header .nav-bar .nav-list {
     display: flex;
+    *align-items: center;
     font-size: 1.7rem;
     list-style: none;
+    margin-bottom: 0;
 }
 
-header .navbar ul li a{
+header .nav-bar ul li a{
     margin-left: 2rem;
     color: white;
     transition: all 0.5s ease;
 }
 
-header .navbar a:hover {
+header .nav-bar a:hover {
     color: rgb(35, 101, 255);
 }
 
@@ -93,7 +102,7 @@ header .saber-mas a:hover{
 }
 
 /* ESTADO ACTIVO */
-.navbar .active {
+.nav-bar .active {
     color: rgb(16, 88, 255);
 }
 
@@ -281,16 +290,18 @@ a:hover:not(.active) {
 
 /* FOOTER LINKS */
 
-#footer-links {
+footer {
     background-color: #212e36;
-}
-
-.caja-contenedor-footer-links {
-    padding: 40px 150px;
-}
-
-.caja-contenedor-footer-links .caja-footer-links .titulo-seccion-footer-links {
     color: white;
+}
+
+.contenedor-footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 9% 0 9%;
+}
+
+.contenedor-footer-links .caja-footer-links .titulo-seccion-footer-links {
     font-size: 22px;
     text-align: left;
     font-family: 'Poppins', sans-serif;
@@ -298,79 +309,80 @@ a:hover:not(.active) {
     padding-bottom: 20px;
 }
 
-.caja-contenedor-footer-links .caja-footer-links .parrafo-seccion-footer-links {
-    color: white;
+.contenedor-footer-links .caja-footer-links .parrafo-seccion-footer-links {
     text-align: left;
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 20px;
 }
 
-.caja-contenedor-footer-links .links-redes {
+.contenedor-footer-links .caja-footer-links select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contenedor-footer-links .links-redes {
     text-align: right;
 }
 
-.caja-contenedor-footer-links .links-redes a {
+.contenedor-footer-links .links-redes a {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    *padding-right: 10px;
+    padding-right: 10px;
     font-size: 16px;
 }
 
-.caja-contenedor-footer-links .links-redes a:hover {
-    *text-decoration: underline;
+.contenedor-footer-links .links-redes a:hover {
+    text-decoration: underline;
 }
 
-.caja-contenedor-footer-links .links-redes .redes-sociales li {
+.contenedor-footer-links .links-redes .redes-sociales li {
     list-style: none;
     padding-top: 20px;
     padding-right: 10px;
     color: white;
     font-size: 20px;
     display: inline-block;
-    *justify-content: end;
+    justify-content: end;
     cursor: pointer;
 }
 
 .links-redes .contacto {
-    color: white;
     list-style: none;
-    *padding-top: 20px;
-    *padding-right: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
     font-size: 14px;
-}
-
-.caja-contenedor-footer-links .caja-footer-links .input-select {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
-}
-
-.content-footer {
-    background-color: #192229;
-    color: white;
 }
 
 .caja-contenedor-footer {
-    padding: 20px 150px;
+    background-color: #212e36;
+    grid-column: 1/3;
+}
+
+.caja-contenedor-footer .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
 }
 
 .caja-contenedor-footer .caja-footer .titulo-footer {
-    font-size: 16px;
-    text-align: left;
+    font-size: 2rem;
+    *text-align: left;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    padding-bottom: 20px;
+    *padding-bottom: 20px;
 }
 
 .caja-contenedor-footer .caja-footer .parrafo-footer {
-    text-align: right;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 20px;
+    *text-align: right;
+    font-size: 1.5rem;
+    *font-weight: 400;
+    *padding-bottom: 20px;
 }
 
 /* Nosotros - bootstrap */
@@ -440,6 +452,8 @@ a:hover:not(.active) {
     font-weight: 400;
 }
 
+
+/* Servicios */
 
 .footer-cajas1 {
     padding: 40px;
@@ -530,19 +544,19 @@ a:hover:not(.active) {
     padding: 30px;
 }
 
-.footer-cajas2 {
+.content-niveles {
     display: grid;
     justify-content: center;
 }
 
-.footer-cajas2 .caja-contenedor {
+.content-niveles .caja-contenedor {
     max-width: 1200px;
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.footer-cajas2 .caja-contenedor .caja {
+.content-niveles .caja-contenedor .caja {
     background-color: #212e36;
     border-radius: 0.5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
@@ -554,27 +568,27 @@ a:hover:not(.active) {
     transition: all 0.5s ease;
 }
 
-.footer-cajas2 .caja-contenedor .caja:hover {
+.content-niveles .caja-contenedor .caja:hover {
     border: 1px solid rgb(16, 88, 255);
 }
 
-.footer-cajas2 .caja-contenedor .caja img {
+.content-niveles .caja-contenedor .caja img {
     height: 15rem;
 }
 
-.footer-cajas2 .caja-contenedor .caja h3 {
+.content-niveles .caja-contenedor .caja h3 {
     font-size: 2rem;
     color: white;
     padding-top: 1rem;
 }
 
-.footer-cajas2 .caja-contenedor .caja p {
+.content-niveles .caja-contenedor .caja p {
     font-size: 1.3rem;
     color: #99afbd;
     padding: 1rem 0;
 }
 
-.footer-cajas2 .caja-contenedor .caja .btn {
+.content-niveles .caja-contenedor .caja .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
@@ -587,32 +601,10 @@ a:hover:not(.active) {
     transition: all .3s linear;
 }
 
-.footer-cajas2 .caja-contenedor .caja .btn:hover {
+.content-niveles .caja-contenedor .caja .btn:hover {
     background-color: var(--azul-hover);
 }
 
-.footer-galeria {
-    font-size: 12px;
-    padding: 40px 0;
-    padding-left: 14px;
-}
-
-.footer-container1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.footer-container1 img {
-    border-radius: 5px;
-}
-
-.footer-container1 img:hover {
-    opacity: .6;
-    transition: all 0.5s;
-}
 
 .container-section {
     display: grid;
@@ -682,7 +674,8 @@ a:hover:not(.active) {
     filter: contrast(120%);
 }
 
-/* FORMULARIO  ADMISIÓN*/
+
+/* ADMISIÓN */
 
 .logo_admision {
     text-align: center;
@@ -833,7 +826,7 @@ a:hover:not(.active) {
     outline: 0;
 }
 
-/* FORMULARIO CONTACTO */
+/* CONTACTO */
 
 .content1 {
     margin-top: 100px;
@@ -843,7 +836,6 @@ a:hover:not(.active) {
     margin-right: auto;
     padding: 1.5em;
 }
-
 
 .contact-wrapper {
     display: grid;
@@ -926,7 +918,7 @@ a:hover:not(.active) {
     transition: all 0.5s ease;
 }
 
-/*BOTON DE WHATSAPP*/
+/* CONTACTO - BOTON DE WHATSAPP */
 
 .whats {
     border-radius: 20px;
@@ -1062,8 +1054,6 @@ a:hover:not(.active) {
     list-style: none;
     padding-top: 10px;
 }
-
-
 
 /* media queries */
 
