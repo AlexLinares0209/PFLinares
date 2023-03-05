@@ -1186,4 +1186,19 @@ footer {
         padding-top: 40px;
     }
 
+    .contenedor-footer-links {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .caja-contenedor-footer {
+        grid-column: 1;
+    }
+
+    .caja-contenedor-footer .footer-flex {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
 }
