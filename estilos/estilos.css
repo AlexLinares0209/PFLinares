@@ -51,7 +51,6 @@ header .logo span {
 
 header .nav-bar .nav-list {
     display: flex;
-    *align-items: center;
     font-size: 1.7rem;
     list-style: none;
     margin-bottom: 0;
@@ -110,19 +109,16 @@ a:hover:not(.active) {
     color: black;
 }
 
-/* Section Hero */
+/* SECCION HERO */
 
 .hero {
-    *background-color: #f5f6f7;
     background-image: url(../images_fondos/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
     background-size: cover;
     background-color: rgba(44, 44, 44, 0.5);
     background-blend-mode: darken;
     background-attachment: fixed;
     color: white;
-    *min-height: 450px;
     height: 100vh;
-    *clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
 }
 
 .hero-principal {
@@ -217,13 +213,8 @@ a:hover:not(.active) {
     padding: 40px;
 }
 
-.content-information {
-    *place-items: center;
-}
-
 .info-p {
     color: white;
-    *padding-top: 0;
     font-size: 2rem;
     text-align: left;
     font-family: 'Poppins', sans-serif;
@@ -239,7 +230,6 @@ a:hover:not(.active) {
     color: white;
     font-size: 20px;
     padding: 25px;
-    *margin-left: 100px;
     border-radius: 10px;
     border: none;
     transition: all 0.5s ease;
@@ -263,11 +253,6 @@ a:hover:not(.active) {
 .contenedor-clientes .carousel {
     text-align: center;
     max-width: 900px;
-}
-
-.carousel-item {
-    *padding: 40px 0;
-    *height: 500px;
 }
 
 .clientes-hijos {
@@ -380,17 +365,12 @@ footer {
 
 .caja-contenedor-footer .caja-footer .titulo-footer {
     font-size: 2rem;
-    *text-align: left;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    *padding-bottom: 20px;
 }
 
 .caja-contenedor-footer .caja-footer .parrafo-footer {
-    *text-align: right;
     font-size: 1.5rem;
-    *font-weight: 400;
-    *padding-bottom: 20px;
 }
 
 /* Nosotros - bootstrap */
@@ -418,7 +398,6 @@ footer {
     color: white;
 }
 
-
 .caja-contenedor-advantage {
     padding: 50px 9%;
 }
@@ -430,7 +409,6 @@ footer {
 .caja-contenedor-advantage .div-img .caja-info-img {
     width: 100%;
     height: 100%;
-    *object-fit: contain;
 }
 
 .caja-contenedor-advantage .caja-info .titulo-seccion {
@@ -469,9 +447,6 @@ footer {
 }
 
 .content-mision-vision .caja-contenedor {
-    *padding: 0 9%;
-    *margin: 50px 0;
-
     row-gap: 20px;
 }
 
@@ -480,7 +455,6 @@ footer {
     border-radius: 0.5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
-    *margin: 1.5rem 2rem;
     padding: 3rem 1rem;
     border-radius: .5rem;
     text-align: center;
@@ -627,7 +601,6 @@ footer {
 .content-niveles .caja-contenedor .caja .btn:hover {
     background-color: var(--azul-hover);
 }
-
 
 .container-section {
     display: grid;
@@ -798,6 +771,14 @@ footer {
     outline: none;
     color: white;
     border-bottom: 1px solid rgb(184, 184, 184);
+
+    transition: all 0.5s ease;
+}
+
+
+.contact-form form input:focus-visible,
+.contact-form form textarea:focus-visible {
+    border-bottom: 1px solid rgb(35, 101, 255);
 }
 
 .contact-form form textarea {
@@ -816,7 +797,6 @@ footer {
 .contact-form form input:hover,
 .contact-form form textarea:hover {
     text-align: center;
-    transition: all 1s;
 }
 
 .contact-form form .politicas {
@@ -920,6 +900,8 @@ footer {
     outline: none;
     color: white;
     border-bottom: 1px solid rgb(184, 184, 184);
+
+    transition: all 0.5s ease;
 }
 
 .contact-form1 form input,
@@ -927,10 +909,14 @@ footer {
     text-align: center;
 }
 
+.contact-form1 form input:focus-visible,
+.contact-form1 form textarea:focus-visible {
+    border-bottom: 1px solid rgb(35, 101, 255);
+}
+
 .contact-form1 form input:hover,
 .contact-form1 form textarea:hover {
     text-align: center;
-    transition: all 1s;
 }
 
 .contact-form1 form button {
