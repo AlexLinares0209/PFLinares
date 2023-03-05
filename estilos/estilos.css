@@ -176,7 +176,6 @@ a:hover:not(.active) {
     border-radius: 0.5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
-    *margin: 1.5rem 1rem;
     padding: 3rem 1rem;
     border-radius: .5rem;
     text-align: center;
@@ -189,12 +188,17 @@ a:hover:not(.active) {
 
 .content-services .caja-contenedor .caja img {
     height: 10rem;
+    transition: all 0.5s ease;
+}
+
+.content-services .caja-contenedor .caja img:hover {
+    transform: scale(1.1);
 }
 
 .content-services .caja-contenedor .caja h3 {
     font-size: 2rem;
     color: white;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .content-services .caja-contenedor .caja p {
@@ -460,21 +464,18 @@ footer {
     font-weight: 400;
 }
 
-
-/* Servicios */
-
-.footer-cajas1 {
+.content-mision-vision {
     padding: 40px;
 }
 
-.footer-cajas1 .caja-contenedor {
+.content-mision-vision .caja-contenedor {
     *padding: 0 9%;
     *margin: 50px 0;
 
     row-gap: 20px;
 }
 
-.footer-cajas1 .caja-contenedor .caja {
+.content-mision-vision .caja-contenedor .caja {
     background-color: #212e36;
     border-radius: 0.5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
@@ -486,17 +487,26 @@ footer {
     transition: all 0.5s ease;
 }
 
-.footer-cajas1 .caja-contenedor .caja img {
-    height: 15rem;
+.content-mision-vision .caja-contenedor .caja:hover {
+    border: 1px solid rgb(16, 88, 255);
 }
 
-.footer-cajas1 .caja-contenedor .caja h3 {
+.content-mision-vision .caja-contenedor .caja img {
+    height: 15rem;
+    transition: all 0.5s ease;
+}
+
+.content-mision-vision .caja-contenedor .caja img:hover {
+    transform: scale(1.1);
+}
+
+.content-mision-vision .caja-contenedor .caja h3 {
     font-size: 2rem;
     color: white;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
-.footer-cajas1 .caja-contenedor .caja p {
+.content-mision-vision .caja-contenedor .caja p {
     font-size: 1.3rem;
     color: #99afbd;
     padding: 1rem 0;
@@ -570,7 +580,7 @@ footer {
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
     margin: 1.5rem 1rem;
-    padding: 1rem 4rem;
+    padding: 3rem 1rem;
     border-radius: .5rem;
     text-align: center;
     transition: all 0.5s ease;
@@ -581,7 +591,12 @@ footer {
 }
 
 .content-niveles .caja-contenedor .caja img {
-    height: 15rem;
+    height: 12rem;
+    transition: all 0.5s ease;
+}
+
+.content-niveles .caja-contenedor .caja img:hover {
+    transform: scale(1.1);
 }
 
 .content-niveles .caja-contenedor .caja h3 {
@@ -652,6 +667,11 @@ footer {
 
 .cajas-extras img {
     height: 10rem;
+    transition: all 0.5s ease;
+}
+
+.cajas-extras img:hover {
+    transform: scale(1.1);
 }
 
 .div-galeria {
