@@ -1072,12 +1072,13 @@ footer {
 /* media queries */
 
 @media screen and (max-width: 768px) {
+
     header label {
         visibility: visible;
         opacity: 1;
     }
 
-    header .navbar {
+    header .nav-bar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -1092,16 +1093,18 @@ footer {
         transition: .2s linear;
     }
 
-    header .navbar ul {
-        display: block;
+    header .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .nav-bar .nav-list li {
+        margin: 2rem 0;
         font-size: 2rem;
     }
 
-    header .navbar ul li {
-        margin: 2rem 0;
-    }
-
-    header .navbar ul li a {
+    header .nav-bar .nav-list li a {
         color: white;
     }
 
@@ -1109,7 +1112,7 @@ footer {
         display: none;
     }
 
-    header input:checked ~ .navbar {
+    header input:checked ~ .nav-bar {
         transform: scaleY(1);
         opacity: 1;
     }
