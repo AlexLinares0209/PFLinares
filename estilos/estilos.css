@@ -837,11 +837,8 @@ footer {
 /* CONTACTO */
 
 .content1 {
-    margin-top: 100px;
-    margin-bottom: 30px;
     max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto 30px auto;
     padding: 1.5em;
 }
 

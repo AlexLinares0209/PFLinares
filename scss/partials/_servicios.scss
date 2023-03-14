@@ -1,0 +1,19 @@
+@use './variables';
+
+.servicios {
+    background-image: url(../images_fondos/linkedin-sales-solutions-NpyF7rjqmq4-unsplash.jpg);
+    background-size: cover;
+    background-color: rgba(44, 44, 44, 0.5);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: white;
+    height: 620px;
+
+    .servicios-principal {
+        padding: 3rem;
+
+        h2 {
+            font-size: 5rem;
+        }
+    }
+}

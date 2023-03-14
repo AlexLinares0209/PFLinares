@@ -1,0 +1,77 @@
+@use './variables';
+
+header {
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #192229;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    .logo {
+
+        h1 {
+            color: white;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        
+        span {
+            color: rgb(35, 101, 255);
+        }
+    }
+
+    .nav-bar {
+        .nav-list {
+            display: flex;
+            font-size: 1.7rem;
+            list-style: none;
+            margin-bottom: 0;
+
+            li {
+                a {
+                    margin-left: 2rem;
+                    color: white;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: rgb(35, 101, 255);
+                    }
+                }
+            }
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        font-size: 3rem;
+        color: white;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .saber-mas {
+        font-size: 1.3rem;
+        background-color: rgb(35, 101, 255);
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: variables.$hover-botones-azules;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}

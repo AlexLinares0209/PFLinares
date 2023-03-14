@@ -1,0 +1,55 @@
+.content-info {
+    color: white;
+
+    .caja-contenedor-advantage {
+        padding: 50px 9%;
+
+        .div-img .caja-info-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .caja-info {
+            padding-left: 40px;
+
+            .titulo-seccion {
+                font-size: 40px;
+                text-transform: uppercase;
+                color: white;
+                text-align: left;
+                padding-bottom: 20px;
+
+                span {
+                    color: rgb(35, 101, 255);
+                }
+            }
+
+            .parrafo-seccion {
+                font-size: 15px;
+                color: #99afbd;
+                padding-bottom: 30px;
+                text-align: justify;
+            }
+
+            .advantage-divs {
+
+                .titulo-seccion {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 18px;
+                    color: white;
+                }
+
+                .parrafo-seccion {
+                    font-size: 15px;
+                    color: #99afbd;
+                    font-weight: 400;
+                }
+
+
+            }
+
+        }
+
+    }
+    
+}

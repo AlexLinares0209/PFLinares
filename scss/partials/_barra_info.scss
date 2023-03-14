@@ -1,0 +1,42 @@
+.content-information {
+    background-color: #092739;
+    color: white;
+    padding: 40px;
+
+    .info-p {
+        color: white;
+        font-size: 2rem;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .section-button {
+        display: flex;
+        justify-content: center;
+
+        .button {
+            background-color: rgb(35, 101, 255);
+            color: white;
+            font-size: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            border: none;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: rgb(16, 88, 255);
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+

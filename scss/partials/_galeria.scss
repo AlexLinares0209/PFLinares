@@ -1,0 +1,21 @@
+.galeria {
+    padding: 40px 9%;
+}
+
+.container-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+        width: 380px;
+        border-radius: 5px;
+
+        &:hover {
+            opacity: .6;
+            transition: all 0.5s;
+        }
+    }
+}

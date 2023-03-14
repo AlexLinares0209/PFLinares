@@ -1,0 +1,18 @@
+.hero-nosotros {
+    height: 320px;
+    background-image: url(../images_fondos/rsz_pang-yuhao-_kd5cxwzok4-unsplash.jpg);
+    color: white;
+    background-repeat: no-repeat center top;
+    background-position: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+
+    .hero-principal-nosotros  {
+        padding: 3rem;
+
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    
+}

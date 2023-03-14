@@ -13,10 +13,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 
     <link rel="shortcut icon" href="./images_favicons/libros.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./estilos/estilos.css">
+    <!-- 
+        <link rel="stylesheet" href="./estilos/estilos.css">
+     -->
+
+     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -44,52 +57,63 @@
 
     <!-- FONDO IMAGEN - TEXTO -->
 
-    <section class="content-who-servicios">
+    <!-- 
+        <section class="content-who-servicios">
         <h2 class="title_servicios">NUESTROS SERVICIOS</h2>
     </section>
+     -->
+
+     <section class="servicios align-items-stretch d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="servicios-principal">
+            <h2>NUESTROS SERVICIOS</h2>
+        </div>
+    </section> 
 
     <!-- INFORMACIÓN NIVELES EDUCATIVOS -->
 
-    <section class="niveles_educativos">
-        <h3 class="title">DISPONEMOS DE 3 NIVELES EDUCATIVOS</h3>
-        <p class="title_parrafo">Nuestros alumnos y los padres de familia nos respaldan</p>
-    </section>
+    <section class="proyectos-recientes seccion-clara d-flex flex-column text-center">
+        <h2 class="seccion-titulo texto-negro">DISPONEMOS DE 3 NIVELES EDUCATIVOS</h2>
+        <p class="seccion-descripcion">Nuestros alumnos y los padres de familia nos respaldan</p>
 
-    <section class="content-niveles">
-        <div class="caja-contenedor">
-            <div class="caja">
-                <img src="./images_iconos/ninos (1).png" alt="">
-                <h3>INICIAL</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis qui officiis odit.
-                    Repellat molestiae rerum aspernatur cupiditate! Asperiores molestiae doloremque autem quisquam. Quae
-                    consectetur facere possimus asperiores eaque quasi?</p>
-
-            </div>
-            <div class="caja">
-                <img src="./images_iconos/leer.png" alt="">
-                <h3>PRIMARIA</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis qui officiis odit.
-                    Repellat molestiae rerum aspernatur cupiditate! Asperiores molestiae doloremque autem quisquam. Quae
-                    consectetur facere possimus asperiores eaque quasi?</p>
-
-            </div>
-            <div class="caja">
-                <img src="./images_iconos/adolescente.png" alt="">
-                <h3>SECUNDARIA</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis qui officiis odit.
-                    Repellat molestiae rerum aspernatur cupiditate! Asperiores molestiae doloremque autem quisquam. Quae
-                    consectetur facere possimus asperiores eaque quasi?</p>
-
+        <div class="container content-services mt-5">
+            <div class="caja-contenedor row">
+                <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="caja">
+                        <img src="./images_iconos/ninos (1).png" alt="">
+                        <h3>INICIAL</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis qui officiis odit.
+                            Repellat molestiae rerum aspernatur cupiditate! Asperiores molestiae doloremque autem quisquam. Quae
+                            consectetur facere possimus asperiores eaque quasi?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="caja">
+                        <img src="./images_iconos/leer.png" alt="">
+                        <h3>PRIMARIA</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis qui officiis odit.
+                        Repellat molestiae rerum aspernatur cupiditate! Asperiores molestiae doloremque autem quisquam. Quae
+                        consectetur facere possimus asperiores eaque quasi?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 text-center">
+                    <div class="caja">
+                        <img src="./images_iconos/adolescente.png" alt="">
+                        <h3>SECUNDARIA</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis qui officiis odit.
+                        Repellat molestiae rerum aspernatur cupiditate! Asperiores molestiae doloremque autem quisquam. Quae
+                        consectetur facere possimus asperiores eaque quasi?</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- SERVICIOS EXTRA COLEGIO -->
 
-    <section class="niveles_educativos">
-        <h3 class="title">OTROS SERVICIOS</h3>
-        <p class="title_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, optio.</p>
-    </section>
+    <section class="proyectos-recientes seccion-clara d-flex flex-column text-center">
+        <h2 class="seccion-titulo texto-negro">OTROS SERVICIOS</h2>
+        <p class="seccion-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, optio.</p>
+    </section> 
 
     <section class="container-section">
         <div class="extras">
@@ -135,14 +159,31 @@
 
     <!-- GALERIA IMAGENES -->
 
-    <div class="testimonios">
-        <h3 class="title">GALERÍA DE FOTOGRAFÍAS</h3>
-        <p class="title_parrafo">Contamos con modernos y confortables ambientes para el aprendizaje y desarrollo de
+    <section class="proyectos-recientes seccion-clara d-flex flex-column text-center">
+        <h2 class="seccion-titulo texto-negro">GALERÍA DE FOTOGRAFÍAS</h2>
+        <p class="seccion-descripcion">Contamos con modernos y confortables ambientes para el aprendizaje y desarrollo de
             nuestros alumnos</p>
+    </section> 
+
+    <div class="galeria">
+        <div class="container-galeria">
+            <div><img src="./images_galeria/rsz_galeria1.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria2.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_1galeria3.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria4.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria5.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria6.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria7.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_1galeria8.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria9.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria10.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria11.jpg" alt=""></div>
+            <div><img src="./images_galeria/rsz_galeria12.jpg" alt=""></div>
+        </div>
     </div>
 
-
-    <div class="div-galeria">
+    <!-- 
+        <div class="div-galeria">
         <section class="section-galeria">
             <img src="./images_galeria/rsz_galeria1.jpg" alt="">
             <img src="./images_galeria/rsz_galeria2.jpg" alt="">
@@ -163,7 +204,8 @@
             <img src="./images_galeria/rsz_galeria12.jpg" alt="">
         </section>
     </div>
-
+     -->
+   
     <!-- FOOTER 1 INFORMACION (BREVE INFORMACION DE LA PÁGINA) -->
 
     <footer>
