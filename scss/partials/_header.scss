@@ -27,6 +27,7 @@ header {
     }
 
     .nav-bar {
+
         .nav-list {
             display: flex;
             font-size: 1.7rem;
@@ -39,8 +40,16 @@ header {
                     color: white;
                     transition: all 0.5s ease;
 
+                    .actived {
+                        color: rgb(16, 88, 255);
+                    }
+
                     &:hover {
                         color: rgb(35, 101, 255);
+                    }
+
+                    &:hover:not(.actived) {
+                        color: black;
                     }
                 }
             }
