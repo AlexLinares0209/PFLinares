@@ -1,5 +1,7 @@
 @use './variables';
 
+/* Header */
+
 header {
     /*position: fixed;*/
     top: 0;
@@ -35,21 +37,22 @@ header {
             margin-bottom: 0;
 
             li {
+
+                .actived {
+                    color: rgb(16, 88, 255);
+                }
+
                 a {
                     margin-left: 2rem;
                     color: white;
                     transition: all 0.5s ease;
-
-                    .actived {
-                        color: rgb(16, 88, 255);
-                    }
 
                     &:hover {
                         color: rgb(35, 101, 255);
                     }
 
                     &:hover:not(.actived) {
-                        color: black;
+                        color: white;
                     }
                 }
             }
