@@ -25,7 +25,7 @@ body {
 
 /* Header */
 header {
-  /*position: fixed;*/
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -326,41 +326,37 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   font-size: 5rem;
 }
 
-.content-info {
-  color: white;
-}
-.content-info .caja-contenedor-advantage {
+.caja-contenedor-advantage {
   padding: 50px 9%;
 }
-.content-info .caja-contenedor-advantage .div-img .caja-info-img {
+.caja-contenedor-advantage .div-img .caja-info-img {
   width: 100%;
   height: 100%;
 }
-.content-info .caja-contenedor-advantage .caja-info {
+.caja-contenedor-advantage .caja-info {
   padding-left: 40px;
 }
-.content-info .caja-contenedor-advantage .caja-info .titulo-seccion {
+.caja-contenedor-advantage .caja-info h2 {
   font-size: 40px;
   text-transform: uppercase;
   color: white;
   text-align: left;
   padding-bottom: 20px;
 }
-.content-info .caja-contenedor-advantage .caja-info .titulo-seccion span {
+.caja-contenedor-advantage .caja-info h2 span {
   color: rgb(35, 101, 255);
 }
-.content-info .caja-contenedor-advantage .caja-info .parrafo-seccion {
+.caja-contenedor-advantage .caja-info p {
   font-size: 15px;
   color: #99afbd;
   padding-bottom: 30px;
   text-align: justify;
 }
-.content-info .caja-contenedor-advantage .caja-info .advantage-divs .titulo-seccion {
-  font-family: "Montserrat", sans-serif;
+.caja-contenedor-advantage .caja-info .advantage-divs h2 {
   font-size: 18px;
   color: white;
 }
-.content-info .caja-contenedor-advantage .caja-info .advantage-divs .parrafo-seccion {
+.caja-contenedor-advantage .caja-info .advantage-divs p {
   font-size: 15px;
   color: #99afbd;
   font-weight: 400;
@@ -443,11 +439,11 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
 }
 
 .content {
-  margin: 40px auto 30px auto;
-  max-width: 1200px;
-  padding: 1.5em;
+  margin-top: 4rem;
+  padding: 3rem 9%;
 }
 .content .logo_admision {
+  padding-top: 4rem;
   text-align: center;
   color: white;
   font-size: 4em;
@@ -482,32 +478,22 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
 }
 .content .contenedor-form .contact-form form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  /* lo que falta */
 }
-.content .contenedor-form .contact-form form p {
+.content .contenedor-form .contact-form form .campos {
   margin: 0;
   padding: 1em;
 }
-.content .contenedor-form .contact-form form .datos {
+.content .contenedor-form .contact-form form .campos .datos {
   display: block;
   font-size: 1.5rem;
   color: white;
   text-align: center;
 }
-.content .contenedor-form .contact-form form .block {
-  grid-column: 1/3;
-}
-.content .contenedor-form .contact-form form select {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-.content .contenedor-form .contact-form form select .opcion1 {
+.content .contenedor-form .contact-form form .campos input {
+  width: 100%;
   text-align: center;
-}
-.content .contenedor-form .contact-form form select option {
-  color: rgb(78, 78, 78);
-}
-.content .contenedor-form .contact-form form button, .content .contenedor-form .contact-form form input, .content .contenedor-form .contact-form form textarea, .content .contenedor-form .contact-form form select {
   font-size: 16px;
   padding: 0.7em;
   border: none;
@@ -517,15 +503,51 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   border-bottom: 1px solid rgb(184, 184, 184);
   transition: all 0.5s ease;
 }
-.content .contenedor-form .contact-form form input, .content .contenedor-form .contact-form form textarea {
+.content .contenedor-form .contact-form form select {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-size: 16px;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid rgb(184, 184, 184);
+  transition: all 0.5s ease;
+}
+.content .contenedor-form .contact-form form select .opcion1 {
   text-align: center;
 }
-.content .contenedor-form .contact-form form textarea {
+.content .contenedor-form .contact-form form select option {
+  color: rgb(78, 78, 78);
+}
+.content .contenedor-form .contact-form form .block {
+  grid-column: 1/3;
+}
+.content .contenedor-form .contact-form form .block .datos {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+.content .contenedor-form .contact-form form .block textarea {
+  text-align: center;
   width: 100%;
+  resize: vertical;
+  font-size: 16px;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid rgb(184, 184, 184);
+  transition: all 0.5s ease;
 }
 .content .contenedor-form .contact-form form .politicas {
   grid-column: 1/3;
   text-align: left;
+  margin-bottom: 1rem;
 }
 .content .contenedor-form .contact-form form .politicas .labelcheck {
   color: white;
@@ -535,31 +557,32 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   color: white;
   text-decoration: underline;
 }
-.content .contenedor-form .contact-form form button {
+.content .contenedor-form .contact-form form .block-button {
+  display: grid;
+  grid-column: 1/3;
+  justify-content: center;
+}
+.content .contenedor-form .contact-form form .block-button button {
   background-color: rgb(16, 88, 255);
   color: #fff;
   border: none;
   border-radius: 30px;
   text-transform: uppercase;
-  width: 40%;
-  padding: 1em;
-  margin-left: 30%;
+  *width: 100%;
+  padding: 1.5rem 8rem;
+  *margin-left: 30%;
   cursor: pointer;
   transition: background-color 0.5s ease-out;
 }
-.content .contenedor-form .contact-form form button:hover, .content .contenedor-form .contact-form form button:focus {
+.content .contenedor-form .contact-form form .block-button button:hover, .content .contenedor-form .contact-form form .block-button button:focus {
   background-color: rgb(35, 101, 255);
   color: #fff;
   outline: 0;
 }
 
 .content1 {
-  margin-top: 100px;
-  margin-bottom: 30px;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
+  margin-top: 8rem;
+  padding: 3rem 15%;
 }
 .content1 .contact-wrapper {
   display: grid;
@@ -597,7 +620,9 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
 .content1 .contact-wrapper .contact-form1 form .block {
   grid-column: 1/3;
 }
-.content1 .contact-wrapper .contact-form1 form button, .content1 .contact-wrapper .contact-form1 form input, .content1 .contact-wrapper .contact-form1 form textarea {
+.content1 .contact-wrapper .contact-form1 form button,
+.content1 .contact-wrapper .contact-form1 form input,
+.content1 .contact-wrapper .contact-form1 form textarea {
   font-size: 16px;
   width: 100%;
   padding: 0.7em;
@@ -608,7 +633,8 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   border-bottom: 1px solid rgb(184, 184, 184);
   transition: all 0.5s ease;
 }
-.content1 .contact-wrapper .contact-form1 form input, .content1 .contact-wrapper .contact-form1 form textarea {
+.content1 .contact-wrapper .contact-form1 form input,
+.content1 .contact-wrapper .contact-form1 form textarea {
   text-align: center;
 }
 .content1 .contact-wrapper .contact-form1 form button {
@@ -633,7 +659,9 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.content1 .contact-wrapper .contact-info h4, .content1 .contact-wrapper .contact-info ul, .content1 .contact-wrapper .contact-info p {
+.content1 .contact-wrapper .contact-info h4,
+.content1 .contact-wrapper .contact-info ul,
+.content1 .contact-wrapper .contact-info p {
   padding: 1em;
   text-align: left;
   font-size: 1.4rem;
@@ -654,7 +682,7 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   font-size: 1.3rem;
   color: white;
 }
-.content1 .contact-wrapper .contact-info .whats {
+.content1 .contact-wrapper .contact-info .whats button {
   border-radius: 20px;
   background-color: #11BA17;
   border: none;
@@ -663,36 +691,15 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   text-align: center;
   font-size: 14px;
   padding: 1em;
-  margin-left: 10px;
+  *margin-left: 10px;
   transition: all 0.5s;
   cursor: pointer;
 }
-.content1 .contact-wrapper .contact-info .whats:hover span {
-  padding-right: 25px;
-}
-.content1 .contact-wrapper .contact-info .whats:hover span:hover {
-  opacity: 1;
-  right: 0;
-}
-.content1 .contact-wrapper .contact-info .whats span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.content1 .contact-wrapper .contact-info .whats span:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.content1 .contact-wrapper .contact-info .whats span a {
+.content1 .contact-wrapper .contact-info .whats button a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
-.content1 .contact-wrapper .contact-info .whats span a:hover {
+.content1 .contact-wrapper .contact-info .whats button a:hover {
   color: white;
 }
 
@@ -716,6 +723,213 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
 .visitanos .visitanos-contenedor ul li {
   list-style: none;
   padding-top: 10px;
+}
+.visitanos .visitanos-contenedor iframe {
+  width: 600px;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #192229;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  header .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .nav-bar ul li {
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  header .nav-bar ul li a {
+    color: white;
+  }
+  header input:checked ~ .nav-bar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  header input:checked ~ label::before {
+    content: "\f00d";
+  }
+  header .saber-mas {
+    display: none;
+  }
+  .proyectos-recientes h2 {
+    font-size: 2.5rem;
+  }
+  .proyectos-recientes p {
+    font-size: 1.5rem;
+  }
+  .content-information .info-p {
+    text-align: center;
+  }
+  .content-information .info-p h3 {
+    font-size: 2.5rem;
+  }
+  .content-information .info-p p {
+    font-size: 1.5rem;
+  }
+  .content-information .button {
+    background-color: rgb(35, 101, 255);
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+  }
+  .content-info .caja-contenedor-advantage {
+    gap: 40px;
+    padding: 40px 9%;
+  }
+  .content-info .caja-contenedor-advantage .caja-info {
+    padding-left: 0px;
+  }
+  .content-info .caja-contenedor-advantage .caja-info h2 {
+    font-size: 4rem;
+  }
+  .content-info .caja-contenedor-advantage .caja-info p {
+    font-size: 1.5rem;
+  }
+  .content-info .caja-contenedor-advantage .caja-info .advantage-divs h2 {
+    font-size: 1.8rem;
+  }
+  .content-info .caja-contenedor-advantage .caja-info .advantage-divs p {
+    font-size: 1.5rem;
+  }
+  footer .contenedor-footer-links {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  footer .contenedor-footer-links .caja-contenedor-footer {
+    grid-column: 1;
+  }
+  footer .contenedor-footer-links .caja-contenedor-footer .footer-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  /* Servicios Extras */
+  .container-section .extras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-section .extras .ext1 {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    place-content: center;
+  }
+  /* Galeria */
+  .galeria {
+    padding: 0 9%;
+  }
+  .galeria .container-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria .container-galeria img {
+    width: 300px;
+  }
+  /* Admisión */
+  .content .contenedor-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content .contenedor-form .logo-admin {
+    display: none;
+  }
+  .content1 .contact-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content1 .contact-wrapper .contact-form1 {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .content1 .contact-wrapper .contact-info {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .content1 .contact-wrapper .contact-info h4,
+  .content1 .contact-wrapper .contact-info ul,
+  .content1 .contact-wrapper .contact-info p {
+    text-align: center;
+  }
+  .content1 .contact-wrapper .contact-info .whats {
+    display: flex;
+    justify-content: center;
+  }
+  .visitanos {
+    background-color: white;
+  }
+  .visitanos .visitanos-contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container-section .extras {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .galeria {
+    padding: 40px 9%;
+  }
+  .galeria .container-galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .galeria .container-galeria img {
+    width: 380px;
+  }
+  /* Admisión */
+  .content .contenedor-form .contact-form form .campos .datos {
+    font-size: 1.2rem;
+  }
+  .content .contenedor-form .contact-form form select {
+    grid-column: 1/3;
+    font-size: 1.2rem;
+  }
+  .content .contenedor-form .contact-form form .block .datos {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+  }
+  .content .contenedor-form .contact-form form .politicas .labelcheck {
+    color: white;
+    font-size: 1rem;
+  }
+  .content1 {
+    padding: 3rem 9%;
+  }
+  .visitanos {
+    background-color: white;
+  }
+  .visitanos .visitanos-contenedor h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .visitanos .visitanos-contenedor ul {
+    font-size: 1.5rem;
+  }
+  .visitanos .visitanos-contenedor ul li {
+    list-style: none;
+    padding-top: 10px;
+  }
+  .visitanos .visitanos-contenedor iframe {
+    width: 350px;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

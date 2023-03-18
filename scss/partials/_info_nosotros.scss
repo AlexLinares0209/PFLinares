@@ -1,7 +1,4 @@
-.content-info {
-    color: white;
-
-    .caja-contenedor-advantage {
+.caja-contenedor-advantage {
         padding: 50px 9%;
 
         .div-img .caja-info-img {
@@ -12,7 +9,7 @@
         .caja-info {
             padding-left: 40px;
 
-            .titulo-seccion {
+            h2 {
                 font-size: 40px;
                 text-transform: uppercase;
                 color: white;
@@ -24,7 +21,7 @@
                 }
             }
 
-            .parrafo-seccion {
+            p {
                 font-size: 15px;
                 color: #99afbd;
                 padding-bottom: 30px;
@@ -33,13 +30,12 @@
 
             .advantage-divs {
 
-                .titulo-seccion {
-                    font-family: 'Montserrat', sans-serif;
+                h2 {
                     font-size: 18px;
                     color: white;
                 }
 
-                .parrafo-seccion {
+                p {
                     font-size: 15px;
                     color: #99afbd;
                     font-weight: 400;
@@ -51,5 +47,3 @@
         }
 
     }
-    
-}

@@ -1,4 +1,3 @@
-@use './partials/media';
 @use './partials/reset';
 @use './partials/header';
 @use './partials/inicio';
@@ -12,12 +11,15 @@
 @use './partials/otros_servicios';
 @use './partials/galeria';
 
+
+
 .content {
-    margin: 40px auto 30px auto;
-    max-width: 1200px;
-    padding: 1.5em;
+
+    margin-top: 4rem;
+    padding: 3rem 9%;
 
     .logo_admision {
+        padding-top: 4rem;
         text-align: center;
         color: white;
         font-size: 4em;
@@ -56,28 +58,49 @@
 
             form {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(2, 1fr);
 
-                p {
+                .campos {
                     margin: 0;
                     padding: 1em;
+
+                    .datos {
+                        display: block;
+                        font-size: 1.5rem;
+                        color: white;
+                        text-align: center;
+
+                    }
+
+                    input {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 16px;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: none;
+                        color: white;
+                        border-bottom: 1px solid rgb(184, 184, 184);
+                        transition: all 0.5s ease;
+                    }
                 }
 
-                .datos {
-                    display: block;
-                    font-size: 1.5rem;
-                    color: white;
-                    text-align: center;
-                }
-
-                .block {
-                    grid-column: 1 / 3;
-                }
+                /* lo que falta */
 
                 select {
+                    width: 100%;
                     font-family: 'Poppins', sans-serif;
                     font-size: 16px;
-                    
+                    font-size: 16px;
+                    padding: .7em;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    color: white;
+                    border-bottom: 1px solid rgb(184, 184, 184);
+                    transition: all 0.5s ease;
+
                     .opcion1 {
                         text-align: center;
                     }
@@ -87,30 +110,35 @@
                     }
                 }
 
-                button,input,textarea,select {
-                    font-size: 16px;
-                    padding: .7em;
-                    border: none;
-                    background: none;
-                    outline: none;
-                    color: white;
-                    border-bottom: 1px solid rgb(184, 184, 184);        
-                    transition: all 0.5s ease;
+                .block {
+                    grid-column: 1 / 3;
 
-                }
+                    .datos {
+                        display: block;
+                        font-size: 1.5rem;
+                        color: white;
+                        text-align: center;
+                    }
 
-                input, textarea {
-
-                    text-align: center;
-                }
-
-                textarea {
-                    width: 100%;
+                    textarea {
+                        text-align: center;
+                        width: 100%;
+                        resize: vertical;
+                        font-size: 16px;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: none;
+                        color: white;
+                        border-bottom: 1px solid rgb(184, 184, 184);
+                        transition: all 0.5s ease;
+                    }
                 }
 
                 .politicas {
                     grid-column: 1 / 3;
                     text-align: left;
+                    margin-bottom: 1rem;
 
                     .labelcheck {
                         color: white;
@@ -123,42 +151,48 @@
                     }
                 }
 
-                button {
-                    background-color: rgb(16, 88, 255);
-                    color: #fff;
-                    border: none;
-                    border-radius: 30px;
-                    text-transform: uppercase;
-                    width: 40%;
-                    padding: 1em;
-                    margin-left: 30%;
-                    cursor: pointer;
-                    transition: background-color 0.5s ease-out;
+                .block-button {
+                    display: grid;
+                    grid-column: 1/3;
+                    justify-content: center;
 
-                    &:hover, &:focus {
-                        background-color: rgb(35, 101, 255);
+                    button {
+                        background-color: rgb(16, 88, 255);
                         color: #fff;
-                        outline: 0;
+                        border: none;
+                        border-radius: 30px;
+                        text-transform: uppercase;
+                        *width: 100%;
+                        padding: 1.5rem 8rem;
+                        *margin-left: 30%;
+                        cursor: pointer;
+                        transition: background-color 0.5s ease-out;
+
+                        &:hover,
+                        &:focus {
+                            background-color: rgb(35, 101, 255);
+                            color: #fff;
+                            outline: 0;
+                        }
                     }
                 }
+
+
             }
         }
     }
 }
 
 .content1 {
-    margin-top: 100px;
-    margin-bottom: 30px;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
+
+    margin-top: 8rem;
+    padding: 3rem 15%;
 
     .contact-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
 
-        > * {
+        >* {
             padding: 1em;
         }
 
@@ -183,7 +217,7 @@
                     margin: 0;
                     padding: 1em;
                 }
-                
+
                 label {
                     display: block;
                     font-size: 1.5rem;
@@ -195,7 +229,9 @@
                     grid-column: 1 / 3;
                 }
 
-                button, input, textarea {
+                button,
+                input,
+                textarea {
                     font-size: 16px;
                     width: 100%;
                     padding: .7em;
@@ -203,11 +239,12 @@
                     background: none;
                     outline: none;
                     color: white;
-                    border-bottom: 1px solid rgb(184, 184, 184);      
+                    border-bottom: 1px solid rgb(184, 184, 184);
                     transition: all 0.5s ease;
                 }
 
-                input, textarea {
+                input,
+                textarea {
                     text-align: center;
                 }
 
@@ -223,7 +260,8 @@
                     cursor: pointer;
                     transition: all 0.5s ease;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         background-color: rgb(35, 101, 255);
                         color: #fff;
                         outline: none;
@@ -237,7 +275,9 @@
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
 
-            h4, ul, p {
+            h4,
+            ul,
+            p {
                 padding: 1em;
                 text-align: left;
                 font-size: 1.4rem;
@@ -253,7 +293,7 @@
             ul {
                 list-style: none;
                 padding: 0;
-                
+
                 li {
                     padding: .3em;
                     padding-left: 1em;
@@ -263,45 +303,24 @@
             }
 
             .whats {
-                border-radius: 20px;
-                background-color: #11BA17;
-                border: none;
-                color: #FFFFFF;
-                font-family: 'Poppins', sans-serif;
-                text-align: center;
-                font-size: 14px;
-                padding: 1em;
-                margin-left: 10px;
-                transition: all 0.5s;
-                cursor: pointer;
 
-                &:hover span {
-                    padding-right: 25px;
-                }
+                button {
 
-                &:hover span:hover {
-                    opacity: 1;
-                    right: 0;
-                }
-
-                span {
+                    border-radius: 20px;
+                    background-color: #11BA17;
+                    border: none;
+                    color: #FFFFFF;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 1em;
+                    *margin-left: 10px;
+                    transition: all 0.5s;
                     cursor: pointer;
-                    display: inline-block;
-                    position: relative;
-                    transition: 0.5s;
-
-                    &:after {
-                        content: '\00bb';
-                        position: absolute;
-                        opacity: 0;
-                        top: 0;
-                        right: -20px;
-                        transition: 0.5s;
-                    }
 
                     a {
                         text-decoration: none;
-                        color: #fff;
+                        color: white;
 
                         &:hover {
                             color: white;
@@ -328,7 +347,7 @@
             font-size: 28px;
             font-family: 'Poppins', sans-serif;
         }
-        
+
         ul {
             font-size: 18px;
 
@@ -337,5 +356,374 @@
                 padding-top: 10px;
             }
         }
+
+        iframe {
+            width: 600px;
+            height: 300px;
+        }
     }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+
+        label {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #192229;
+            padding: 1rem 2rem;
+            border-top: .1rem solid rgba(0, 0, 0, .2);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            transition: .2s linear;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                li {
+                    margin: 2rem 0;
+                    font-size: 2rem;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        input {
+
+            &:checked~.nav-bar {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+
+            &:checked~label::before {
+                content: '\f00d';
+            }
+        }
+
+        .saber-mas {
+            display: none;
+        }
+
+    }
+
+    .proyectos-recientes {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .content-information {
+
+        .info-p {
+            text-align: center;
+
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        .button {
+            background-color: rgb(35, 101, 255);
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+    }
+
+    .content-info {
+
+        .caja-contenedor-advantage {
+            gap: 40px;
+            padding: 40px 9%;
+
+            .caja-info {
+                padding-left: 0px;
+
+                h2 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                .advantage-divs {
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    footer {
+
+        .contenedor-footer-links {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+            .caja-contenedor-footer {
+                grid-column: 1;
+            }
+
+            .caja-contenedor-footer {
+                .footer-flex {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+
+    /* Servicios Extras */
+
+    .container-section {
+
+        .extras {
+            grid-template-columns: repeat(2, 1fr);
+
+            .ext1 {
+
+                grid-column: 1;
+                grid-row: 1;
+                display: grid;
+                place-content: center;
+            }
+        }
+
+    }
+
+
+    /* Galeria */
+
+    .galeria {
+
+        padding: 0 9%;
+
+        .container-galeria {
+            grid-template-columns: repeat(2, 1fr);
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+
+    /* Admisión */
+
+    .content {
+
+        .contenedor-form {
+
+            grid-template-columns: repeat(1, 1fr);
+
+            .logo-admin {
+                display: none;
+            }
+
+        }
+
+
+    }
+
+    .content1 {
+
+        .contact-wrapper {
+            grid-template-columns: repeat(1, 1fr);
+
+            .contact-form1 {
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 0px;
+            }
+
+            .contact-info {
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+
+                h4,
+                ul,
+                p {
+                    text-align: center;
+                }
+
+                .whats {
+
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+        }
+    }
+
+    .visitanos {
+        background-color: white;
+    
+        .visitanos-contenedor {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 40px;
+        }
+    }
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .container-section {
+
+        .extras {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+    }
+
+    .galeria {
+
+        padding: 40px 9%;
+
+        .container-galeria {
+            grid-template-columns: repeat(1, 1fr);
+
+            img {
+                width: 380px;
+            }
+        }
+    }
+
+    /* Admisión */
+
+    .content {
+
+        .contenedor-form {
+
+            .contact-form {
+
+                form {
+
+
+
+                    .campos {
+
+                        .datos {
+                            font-size: 1.2rem;
+                        }
+
+
+                    }
+
+                    select {
+                        grid-column: 1/3;
+                        font-size: 1.2rem;
+                    }
+
+                    .block {
+
+                        .datos {
+                            display: block;
+                            font-size: 1.2rem;
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+
+                    .politicas {
+
+                        .labelcheck {
+                            color: white;
+                            font-size: 1rem;
+
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .content1 {
+        padding: 3rem 9%;
+        
+    }
+
+    .visitanos {
+        background-color: white;
+
+        .visitanos-contenedor {
+
+            h2 {
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+            }
+    
+            ul {
+                font-size: 1.5rem;
+    
+                li {
+                    list-style: none;
+                    padding-top: 10px;
+                }
+            }
+
+            iframe {
+                width: 350px;
+                height: 150px;
+            }
+
+        }
+    
+        
+    }
+
 }
