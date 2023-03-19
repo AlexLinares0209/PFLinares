@@ -12,6 +12,15 @@
 @use './partials/galeria';
 
 
+/* Mixins */
+
+@mixin for-tablet {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+
 
 .content {
 
@@ -315,16 +324,17 @@
                     font-size: 14px;
                     padding: 1em;
                     *margin-left: 10px;
-                    transition: all 0.5s;
+                    transition: all 0.5s ease;
                     cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                        transform: scale(.9);
+                    }
 
                     a {
                         text-decoration: none;
                         color: white;
-
-                        &:hover {
-                            color: white;
-                        }
                     }
                 }
             }
@@ -342,6 +352,11 @@
         justify-items: center;
         align-items: center;
         padding: 3rem 9%;
+
+        @include for-tablet {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 40px;
+        }
 
         h2 {
             font-size: 28px;
@@ -399,10 +414,6 @@
                 li {
                     margin: 2rem 0;
                     font-size: 2rem;
-
-                    a {
-                        color: white;
-                    }
                 }
             }
         }
@@ -421,41 +432,6 @@
 
         .saber-mas {
             display: none;
-        }
-
-    }
-
-    .proyectos-recientes {
-
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-    }
-
-    .content-information {
-
-        .info-p {
-            text-align: center;
-
-            h3 {
-                font-size: 2.5rem;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
-        }
-
-        .button {
-            background-color: rgb(35, 101, 255);
-            color: white;
-            font-size: 20px;
-            padding: 15px;
         }
 
     }
@@ -490,64 +466,6 @@
         }
     }
 
-
-
-    footer {
-
-        .contenedor-footer-links {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 20px;
-
-            .caja-contenedor-footer {
-                grid-column: 1;
-            }
-
-            .caja-contenedor-footer {
-                .footer-flex {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px 0;
-                }
-            }
-        }
-    }
-
-
-    /* Servicios Extras */
-
-    .container-section {
-
-        .extras {
-            grid-template-columns: repeat(2, 1fr);
-
-            .ext1 {
-
-                grid-column: 1;
-                grid-row: 1;
-                display: grid;
-                place-content: center;
-            }
-        }
-
-    }
-
-
-    /* Galeria */
-
-    .galeria {
-
-        padding: 0 9%;
-
-        .container-galeria {
-            grid-template-columns: repeat(2, 1fr);
-
-            img {
-                width: 300px;
-            }
-        }
-    }
-
-
     /* Admisión */
 
     .content {
@@ -564,6 +482,8 @@
 
 
     }
+
+    /* Contacto */
 
     .content1 {
 
@@ -596,46 +516,10 @@
         }
     }
 
-    .visitanos {
-        background-color: white;
-    
-        .visitanos-contenedor {
-            grid-template-columns: repeat(1, 1fr);
-            row-gap: 40px;
-        }
-    }
-
-
-
-
-
-
 }
 
 
 @media screen and (max-width: 425px) {
-
-    .container-section {
-
-        .extras {
-            grid-template-columns: repeat(1, 1fr);
-
-        }
-
-    }
-
-    .galeria {
-
-        padding: 40px 9%;
-
-        .container-galeria {
-            grid-template-columns: repeat(1, 1fr);
-
-            img {
-                width: 380px;
-            }
-        }
-    }
 
     /* Admisión */
 
@@ -691,6 +575,8 @@
 
 
     }
+
+    /* Contact */
 
     .content1 {
         padding: 3rem 9%;

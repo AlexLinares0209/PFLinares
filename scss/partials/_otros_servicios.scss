@@ -1,12 +1,35 @@
+/* mixin extras */
+
+
+@mixin for-tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-phone {
+    @media (max-width: 426px) {
+        @content
+    }
+}
+
 .container-section {
     display: grid;
     justify-content: center;
 
     .extras {
-        max-width: 1200px;
+        padding: 0 11%;
         margin: 40px 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        @include for-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include for-phone {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .cajas-extras {
             background-color: #212e36;
@@ -24,13 +47,13 @@
                 border: 1px solid rgb(16, 88, 255);
             }
 
+            &:hover img {
+                transform: scale(1.1);
+            }
+
             img {
                 height: 10rem;
                 transition: all 0.5s ease;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
             }
 
 
@@ -41,6 +64,13 @@
             grid-row: 1/3;
             display: grid;
             place-content: center;
+
+            @include for-tablet {
+                grid-column: 1;
+                grid-row: 1;
+                display: grid;
+                place-content: center;
+            }
         }
     }
 }

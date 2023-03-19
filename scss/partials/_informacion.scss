@@ -1,6 +1,14 @@
+/* Mixin informacion */
+
+@mixin for-tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
 /* Información - index */
 
-.proyectos-recientes {
+.presentacion {
     padding: 40px;
     color: white;
 
@@ -8,9 +16,22 @@
         font-size: 4rem;
     }
 
-    .proyectos-recientes p {
+    p {
         font-size: 1.5rem;
     }
+
+    @include for-tablet {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+
 
     .content-services {
         color: white;
@@ -32,13 +53,13 @@
                     border: 1px solid rgb(16, 88, 255);
                 }
 
+                &:hover img {
+                    transform: scale(1.1);
+                }
+
                 img {
                     height: 10rem;
                     transition: all 0.5s ease;
-
-                    &:hover {
-                        transform: scale(1.1);
-                    }
                 }
 
                 h3 {
