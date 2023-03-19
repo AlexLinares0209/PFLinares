@@ -1,3 +1,5 @@
+@use './variables';
+
 /* Mixin footer */
 
 @mixin for-tablet {
@@ -33,7 +35,7 @@ footer {
                 padding-bottom: 20px;
 
                 span {
-                    color: rgb(35, 101, 255);
+                    color: variables.$azul;
                 }
             }
 

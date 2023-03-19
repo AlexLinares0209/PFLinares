@@ -1,3 +1,5 @@
+@use './variables';
+
 /* Mixin barra-info */
 
 @mixin for-tablet {
@@ -37,7 +39,7 @@
         justify-content: center;
 
         .button {
-            background-color: rgb(35, 101, 255);
+            background-color: variables.$azul;
             color: white;
             font-size: 20px;
             padding: 25px;
@@ -53,7 +55,7 @@
             }
 
             &:hover {
-                background-color: rgb(16, 88, 255);
+                background-color: variables.$hover-azul;
             }
 
             a {

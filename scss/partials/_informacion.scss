@@ -1,3 +1,5 @@
+@use './variables';
+
 /* Mixin informacion */
 
 @mixin for-tablet {
@@ -50,7 +52,7 @@
                 transition: all 0.5s ease;
 
                 &:hover {
-                    border: 1px solid rgb(16, 88, 255);
+                    border: 1px solid variables.$hover-azul;
                 }
 
                 &:hover img {
