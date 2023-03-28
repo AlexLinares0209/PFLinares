@@ -311,12 +311,13 @@ footer .contenedor-footer-links .links-redes a:hover {
 footer .contenedor-footer-links .links-redes .redes-sociales li {
   list-style: none;
   padding-top: 20px;
-  padding-right: 10px;
   color: white;
-  font-size: 20px;
   display: inline-block;
   justify-content: end;
   cursor: pointer;
+}
+footer .contenedor-footer-links .links-redes .redes-sociales li a {
+  font-size: 2rem;
 }
 footer .contenedor-footer-links .links-redes .contacto {
   list-style: none;
@@ -454,6 +455,9 @@ footer .contenedor-footer-links .caja-contenedor-footer .caja-footer .parrafo-fo
   border-radius: 0.5rem;
   text-align: center;
   transition: all 0.5s ease;
+}
+.container-section .extras .cajas-extras p {
+  font-size: 1.2rem;
 }
 .container-section .extras .cajas-extras:hover {
   border: 1px solid rgb(16, 88, 255);

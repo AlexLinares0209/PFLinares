@@ -75,12 +75,15 @@ footer {
                 li {
                     list-style: none;
                     padding-top: 20px;
-                    padding-right: 10px;
                     color: white;
-                    font-size: 20px;
                     display: inline-block;
                     justify-content: end;
                     cursor: pointer;
+
+                    a {
+                        font-size: 2rem;
+                    }
+
                 }
 
             }
